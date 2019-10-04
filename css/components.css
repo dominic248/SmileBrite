@@ -1,0 +1,549 @@
+:root {
+    --main-about-card-size: 250px;
+}
+
+.bgimg {
+        position: relative;
+        /*opacity: 0.65;*/
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.about .column {
+    width: var(--main-about-card-size);
+    padding: 10px auto;
+    height: calc(var(--main-about-card-size) + 50px);
+    position: relative;
+
+}
+
+
+.about .row {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.about .card {
+    position: absolute;
+    border-radius: 50%;
+    margin: 125px;
+    transform: translate(-50%, -50%);
+    width: var(--main-about-card-size);
+    height: var(--main-about-card-size);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+
+.about .card .front img {
+    border-radius: 50%;
+}
+
+.about .card .front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.about .card:hover .front {
+    transform: rotateX(-180deg);
+}
+
+.about .card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.about .card .back:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: calc((var(--main-about-card-size)/2) * 2);
+    width: calc(var(--main-about-card-size)/2);
+    background: rgba(255, 255, 255, .1);
+    border-bottom-left-radius: calc((var(--main-about-card-size)/2) * 2);
+    border-top-left-radius: calc((var(--main-about-card-size)/2) * 2);
+}
+
+.about .card:hover .back {
+    transform: rotateX(0deg);
+}
+
+.about .card .back .details {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.about .card .back .details h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.about .card .back .details h2 span {
+    color: #a7a7a7;
+    font-size: 16px;
+}
+
+.about .social-icons {
+    padding: 10px 0;
+}
+
+.about .social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.about .social-icons a .fa {
+    line-height: 36px;
+}
+
+.about .social-icons a:hover {
+    background: #e91e63;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
+}
+
+.gallery-item {
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 24rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.15);
+
+}
+
+
+.gallery .bottom-text {
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em
+}
+
+.gallery a,
+.gallery a:hover,
+.gallery a:visited,
+.gallery a:link {
+    color: grey;
+    text-decoration: none;
+}
+
+/*
+The following rule will only run if your browser supports CSS grid.
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+*/
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        /*grid-gap: 2rem;*/
+    }
+
+    .gallery,
+    .gallery-item {
+        margin: 0;
+    }
+}
+#gallery h3{
+    font-size:1px;
+}
+
+/* Style tab links */
+    .tablink {
+        background-color: #555;
+        height: 88px;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 33.3%;
+    }
+
+    .tablink:hover {
+        background-color: #777;
+    }
+
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+        color: black;
+        background: white;
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+
+
+.ripplelink {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    border: 0;
+    background-color: #EEEEEE;
+    padding: 8px 20px;
+    border: none;
+    font-size: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    z-index: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.ripplelink:hover {
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 100, 0.3) 0 16px 16px 0;
+    -webkit-box-shadow: rgba(100, 100, 100, 0.3) 0 16px 16px 0;
+    -moz-box-shadow: rgba(100, 100, 100, 0.3) 0 16px 16px 0;
+}
+
+.inkripple {
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.animateripple {
+    -webkit-animation: ripplebutton 0.65s linear;
+    -moz-animation: ripplebutton 0.65s linear;
+    -ms-animation: ripplebutton 0.65s linear;
+    -o-animation: ripplebutton 0.65s linear;
+    animation: ripplebutton 0.65s linear;
+}
+
+@keyframes ripplebutton {
+    100% {
+        opacity: 0;
+        color: green;
+        -webkit-transform: scale(2.5);
+        -moz-transform: scale(2.5);
+        -o-transform: scale(2.5);
+        transform: scale(2.5);
+    }
+}
+
+
+.input-text,
+.select-text {
+    font-size: 18px;
+    content: '';
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid grey;
+    color: white;
+}
+
+.select-text {
+    position: relative;
+    font-family: inherit;
+    padding: 10px 10px 10px 0;
+    border-radius: 0;
+    appearance: none;
+    /*make the arrow disappear in dropdown*/
+    -webkit-appearance: none
+}
+
+select option {
+    background-color: rgba(0, 0, 255, .5);
+}
+
+.label {
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.select:after {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+}
+
+.input-text:focus,
+.select-text:focus {
+    outline: none;
+}
+
+.input-text:focus~.password-view-icon,
+.select-text:focus~.password-view-icon {
+    display: block;
+}
+
+.input-text:focus~.label,
+.select-text:focus~.label {
+    color: black;
+    top: -12px;
+    transition: 0.2s ease all;
+    font-size: 14px;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+.input-text:focus~.bar:before,
+.input-text:focus~.bar:after,
+.select-text:focus~.select-bar:before,
+.select-text:focus~.select-bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input-text:focus~.highlight,
+.select-text:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+@keyframes radioripple {
+    0% {
+        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.0);
+    }
+
+    50% {
+        box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    100% {
+        box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0);
+    }
+}
+
+.md-radio {
+    margin: 16px 0;
+}
+
+.md-radio.md-radio-inline {
+    display: inline-block;
+}
+
+.md-radio input[type="radio"] {
+    display: none;
+}
+
+.md-radio input[type="radio"]:checked+label:before {
+    border-color: black;
+    animation: radioripple 0.2s linear forwards;
+}
+
+.md-radio input[type="radio"]:checked+label:after {
+    transform: scale(1);
+}
+
+.md-radio label {
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    padding: 0 30px;
+    margin-bottom: 0;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+
+.md-radio label:before,
+.md-radio label:after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    transition-property: transform, border-color;
+}
+
+.md-radio label:before {
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.54);
+}
+
+.md-radio label:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    background: black;
+}
+
+
+.button {
+    border: 0;
+    background-color: #EEEEEE;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.block-button {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.block {
+    display: block;
+    width: 100%;
+
+}
+
+.primary {
+    background-color: #2196F3;
+    color: white;
+}
+
+.danger {
+    background-color: #F44336;
+    color: white;
+}
+
+.yellow {
+    background-color: yellow;
+    color: white;
+}
