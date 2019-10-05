@@ -21,7 +21,7 @@
                     <div class="bottom-section-notification-row">
                         <a href="sub-pages/blog/no-prep-veneers.php">
                             <span>more info..</span>
-                            <img src="icon/external-link-blue.png">
+                            <img src="static/images/icon/external-link-blue.png">
                         </a>
                     </div>
                 </div>

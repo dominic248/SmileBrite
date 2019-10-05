@@ -3,11 +3,11 @@
 <head>
     <title>Request Appointment | Smile Brite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/head.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/head.php'); ?>
     <style type="text/css">
     body {
         background-color: white;
-        /*-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3)), url("img/bg.jpg");*/
+        /*-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3)), url("static/images/bg.jpg");*/
     }
 
     .input-text:valid~.label,
@@ -27,13 +27,13 @@
 
 
     .bgimg-1 {
-        background-image: url("img/request-appointment1.jpg");
+        background-image: url("static/images/request-appointment1.jpg");
         height: 300px;
         line-height: 300px;
     }
 
     .bgimg-2 {
-        background-image: url("img/request-appointment2.jpg");
+        background-image: url("static/images/request-appointment2.jpg");
 
     }
    input[type=date]:required:invalid::-webkit-datetime-edit {
@@ -46,7 +46,7 @@ input[type=date]:focus::-webkit-datetime-edit {
 </head>
 
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/headernav.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/headernav.php'); ?>
     <div class=" bgimg bgimg-1" >
             <h1 class="heading" style="padding-top:50px;color: white;vertical-align: center;text-align: center;margin:0"><span class="" style="">Request Appointment</span></h1>
             <!-- background-image:linear-gradient(172deg, #00dbde 0%, #fc00ff 100%); -->
@@ -60,7 +60,7 @@ input[type=date]:focus::-webkit-datetime-edit {
                 <form name="requestappointment" method="post" class="box" style="vertical-align: middle;text-align: center;">
                     <!-- <h1 class="form-header-text">APPOINTMENT</h1> -->
                     <!-- <div>
-                        <a href=''><img src="img/circle-image.png" id="signup-avatar" style="width: 125px;height: 125px;border-radius: 50%;margin-bottom: 25px;"><input accept='image/*' type='file' style='display:none;' name='avatar' id='profile-image-change-button' onchange="readImageURL(this);"></a>
+                        <a href=''><img src="static/images/circle-image.png" id="signup-avatar" style="width: 125px;height: 125px;border-radius: 50%;margin-bottom: 25px;"><input accept='image/*' type='file' style='display:none;' name='avatar' id='profile-image-change-button' onchange="readImageURL(this);"></a>
                     </div> -->
                     <div class="row">
                         <div class="group" style="display: inline-block;">
@@ -169,15 +169,15 @@ input[type=date]:focus::-webkit-datetime-edit {
             </article>
         </div>
     </div>
- <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/footer.php'); ?>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/loading.php'); ?>
+ <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/footer.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/loading.php'); ?>
    
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/notificationbox.js"></script>
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/navbar.js"></script>
+    <script src="static/js/notificationbox.js"></script>
     <script type="text/javascript">
-        <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/jscode.php'); ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/jscode.php'); ?>
         
     //disallow to select previous date
     document.getElementById("meetdate").setAttribute("min",new Date().toISOString().split("T")[0])

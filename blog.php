@@ -3,17 +3,17 @@
 <head>
     <title>Blog | Smile Brite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/head.php'); ?>
-    <link rel="stylesheet" type="text/css" href="css/blog.css">
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/head.php'); ?>
+    <link rel="stylesheet" type="text/css" href="static/css/blog.css">
     <style type="text/css">
         body {
-            background-image: url("img/bg.jpg");
+            background-image: url("static/images/bg.jpg");
         }
 
         /*PEN STYLES*/
 
         .bgimg-1 {
-            background-image: url("img/bg3.jpg");
+            background-image: url("static/images/bg3.jpg");
             height: 300px;
             line-height: 300px;
         }
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/headernav.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/headernav.php'); ?>
     <div class="bgimg-1 bgimg">
         <h1 class="heading" style="padding-top:50px;color: black;vertical-align: center;text-align: center"><span class="" style="">Blog</span></h1>
         <!-- background-image:linear-gradient(172deg, #00dbde 0%, #fc00ff 100%); -->
@@ -39,7 +39,7 @@
         <article>
             <div class="blog-card">
                 <div class="meta">
-                    <div class="photo" style="background-image: url('img/blog/no-prep-veneers.jpg')"></div>
+                    <div class="photo" style="background-image: url('static/images/blog/no-prep-veneers.jpg')"></div>
                     <ul class="details">
                         <li class="author"><a href="#">Komal Torlikonda</a></li>
                         <li class="date">Aug. 24, 2015</li>
@@ -63,7 +63,7 @@
             </div>
             <div class="blog-card alt">
                 <div class="meta">
-                    <div class="photo" style="background-image: url('img/blog/veneers.jpg')"></div>
+                    <div class="photo" style="background-image: url('static/images/blog/veneers.jpg')"></div>
                     <ul class="details">
                         <li class="author"><a href="#">Niharika Walke</a></li>
                         <li class="date">July. 15, 2015</li>
@@ -87,7 +87,7 @@
             </div>
             <div class="blog-card">
                 <div class="meta">
-                    <div class="photo" style="background-image: url('img/blog/invisalign.jpg')"></div>
+                    <div class="photo" style="background-image: url('static/images/blog/invisalign.jpg')"></div>
                     <ul class="details">
                         <li class="author"><a href="#">Soumya Shetty</a></li>
                         <li class="date">Aug. 24, 2015</li>
@@ -110,7 +110,7 @@
             </div>
             <div class="blog-card alt">
                 <div class="meta">
-                    <div class="photo" style="background-image: url('img/blog/whitening.jpg')"></div>
+                    <div class="photo" style="background-image: url('static/images/blog/whitening.jpg')"></div>
                     <ul class="details">
                         <li class="author"><a href="#">Komal Torlikonda</a></li>
                         <li class="date">July. 15, 2015</li>
@@ -137,15 +137,15 @@
 
         </aside>
     </div>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/footer.php'); ?>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/loading.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/footer.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/loading.php'); ?>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/notificationbox.js"></script>
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/navbar.js"></script>
+    <script src="static/js/notificationbox.js"></script>
     <script type="text/javascript">
-        <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/jscode.php'); ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/jscode.php'); ?>
     </script>
 </body>
 

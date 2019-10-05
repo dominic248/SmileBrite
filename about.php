@@ -3,10 +3,10 @@
 <head>
     <title>About | Smile Brite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/head.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/head.php'); ?>
     <style type="text/css">
     body {
-        background-image: url("img/bg.jpg");
+        background-image: url("static/images/bg.jpg");
     }
 
     .valid~.label {
@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/headernav.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/headernav.php'); ?>
     <div class="main body-top">
         <article>
             <div style="text-align: center;color: white;">
@@ -40,7 +40,7 @@
                     <div class="row">
                         <div class="column">
                             <div class="card">
-                                <div class="front"><img width="100%" height="100%" src="img/team/komal.jpg"></div>
+                                <div class="front"><img width="100%" height="100%" src="static/images/team/komal.jpg"></div>
                                 <div class="back">
                                     <div class="details">
                                         <h2>Dr. Komal Torlikonda<br><span>Web master</span></h2>
@@ -58,7 +58,7 @@
                         </div>
                         <div class="column">
                             <div class="card">
-                                <div class="front"><img width="100%" height="100%" src="img/team/niharika.jpg"></div>
+                                <div class="front"><img width="100%" height="100%" src="static/images/team/niharika.jpg"></div>
                                 <div class="back">
                                     <div class="details">
                                         <h2>Dr. Niharika Walke<br><span>Web master</span></h2>
@@ -76,7 +76,7 @@
                         </div>
                         <div class="column">
                             <div class="card">
-                                <div class="front"><img width="100%" height="100%" src="img/team/soumya.png"></div>
+                                <div class="front"><img width="100%" height="100%" src="static/images/team/soumya.png"></div>
                                 <div class="back">
                                     <div class="details">
                                         <h2>Dr. Soumya Shetty<br><span>Web master</span></h2>
@@ -124,15 +124,15 @@
         </article>
         <!-- <div id="map" style="height: 500px;width: 100%"></div> -->
     </div>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/footer.php'); ?>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/loading.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/footer.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/loading.php'); ?>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/notificationbox.js"></script>
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/navbar.js"></script>
+    <script src="static/js/notificationbox.js"></script>
     <script type="text/javascript">
-        <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/jscode.php'); ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/jscode.php'); ?>
         
     window.onload = function() {
         document.getElementById("email-input").focus();

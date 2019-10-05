@@ -18,9 +18,9 @@
         <div class="col social">
             <h1>Social</h1>
             <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100009522706346"><img src="img/social/facebook.png" width="32" style="width: 32px;"></a></li>  
-                <li><a href="https://api.whatsapp.com/send?phone=919987849364"><img src="img/social/whatsapp.png" width="32" style="width: 32px;"></a></li>
-                <li><a href="https://www.instagram.com/komal_99_/"><img src="img/social/instagram.png" width="32" style="width: 32px;"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100009522706346"><img src="static/images/social/facebook.png" width="32" style="width: 32px;"></a></li>  
+                <li><a href="https://api.whatsapp.com/send?phone=919987849364"><img src="static/images/social/whatsapp.png" width="32" style="width: 32px;"></a></li>
+                <li><a href="https://www.instagram.com/komal_99_/"><img src="static/images/social/instagram.png" width="32" style="width: 32px;"></a></li>
             </ul>
         </div>
         <div class="clearfix"></div>

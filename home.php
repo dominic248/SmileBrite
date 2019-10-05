@@ -3,9 +3,10 @@
 <head>
     <title>Smile Brite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/head.php'); ?>
-    <link rel="stylesheet" type="text/css" href="css/gallery.css">
-    <link rel="stylesheet" type="text/css" href="css/testimonial.css">
+    <link href="/SmileBrite/manifest.json" rel="manifest">
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/head.php'); ?>
+    <link rel="stylesheet" type="text/css" href="static/css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="static/css/testimonial.css">
     <style type="text/css">
     .typewritter {
         text-align: center;
@@ -83,7 +84,7 @@
 
 
     .bgimg-1 {
-        /*background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3)), url("img/bg2.jpg");*/
+        /*background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3)), url("static/images/bg2.jpg");*/
         height: 100vh;
     }
 
@@ -99,12 +100,12 @@
     }
 
     .bgimg-2 {
-        background-image: linear-gradient(rba(255, 0, 0.3), rba(0, 255,  0.3), rba(0, 0,  0.3)), url("img/bg3.jpg");
+        background-image: linear-gradient(rba(255, 0, 0.3), rba(0, 255,  0.3), rba(0, 0,  0.3)), url("static/images/bg3.jpg");
         height: 50vh;
     }
 
     .bgimg-3 {
-        background-image: linear-gradient(rba(255, 0,  0.3), rba(0, 255, 0.3), rba(0, 0,  0.3)), url("img/bg1.jpg");
+        background-image: linear-gradient(rba(255, 0,  0.3), rba(0, 255, 0.3), rba(0, 0,  0.3)), url("static/images/bg1.jpg");
         height: 50vh;
     }
 
@@ -147,10 +148,10 @@
 </head>
 
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/headernav.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/headernav.php'); ?>
     <section id="home">
         <video autoplay muted loop id="myVideo">
-            <source src="video/original.mp4" type="video/mp4">
+            <source src="static/videos/original.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
         <div class="bgimg bgimg-1">
@@ -186,25 +187,25 @@
             <div class="gallery">
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/Veneers.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/Veneers.jpg" alt="">
                         <div class="bottom-text">VENEERS</div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/No-Prep-Veneers.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/No-Prep-Veneers.jpg" alt="">
                         <div class="bottom-text">NO-PREP<br>VENEERS</div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/Invisalign.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/Invisalign.jpg" alt="">
                         <div class="bottom-text">INVISALIGN</div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/Whitening.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/Whitening.jpg" alt="">
                         <div class="bottom-text">TEETH<br>WHITENING</div>
                     </div>
                 </a>
@@ -215,25 +216,25 @@
             <div class="gallery">
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/Crowns.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/Crowns.jpg" alt="">
                         <div class="bottom-text">CROWNS</div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/Inlay-Onlay.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/Inlay-Onlay.jpg" alt="">
                         <div class="bottom-text">INLAYS & ONLAYS</div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/Fillings.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/Fillings.jpg" alt="">
                         <div class="bottom-text">FILLINGS</div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/Bridges.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/Bridges.jpg" alt="">
                         <div class="bottom-text">BRIDGES</div>
                     </div>
                 </a>
@@ -244,26 +245,26 @@
             <div class="gallery">
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/Implants.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/Implants.jpg" alt="">
                         <div class="bottom-text">
                             DENTAL IMPLANTS</div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/Extraction.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/Extraction.jpg" alt="">
                         <div class="bottom-text">EXTRACTIONS</div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/Sedation.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/Sedation.jpg" alt="">
                         <div class="bottom-text">SEDATION</div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="img/gallery/PRFtreatment.jpg" alt="">
+                        <img class="gallery-image" src="static/images/gallery/PRFtreatment.jpg" alt="">
                         <div class="bottom-text">PRF TREATMENT</div>
                     </div>
                 </a>
@@ -291,7 +292,7 @@
         <div class="row">
           <div class="col">
             <div class="testimonial">
-              <img src="img/testimonial/chrissy.jpg" alt="">
+              <img src="static/images/testimonial/chrissy.jpg" alt="">
               <div class="name">Chrissy Costanza</div>
               <div class="stars">
                 <i class="fas fa-star"></i>
@@ -309,7 +310,7 @@
 
           <div class="col">
             <div class="testimonial">
-              <img src="img/testimonial/p3.png" alt="">
+              <img src="static/images/testimonial/p3.png" alt="">
               <div class="name">Steve Stevenson</div>
               <div class="stars">
                 <i class="fas fa-star"></i>
@@ -327,7 +328,7 @@
 
           <div class="col">
             <div class="testimonial">
-              <img src="img/testimonial/jubinu.jpg" alt="">
+              <img src="static/images/testimonial/jubinu.jpg" alt="">
               <div class="name">Jubinu Varghese</div>
               <div class="stars">
                 <i class="fas fa-star"></i>
@@ -353,7 +354,7 @@
             <div class="row">
                 <div class="column">
                     <div class="card">
-                        <div class="front"><img width="100%" height="100%" src="img/team/komal.jpg"></div>
+                        <div class="front"><img width="100%" height="100%" src="static/images/team/komal.jpg"></div>
                         <div class="back">
                             <div class="details">
                                 <h2>Dr. Komal Torlikonda<br><span>Web master</span></h2>
@@ -371,7 +372,7 @@
                 </div>
                 <div class="column">
                     <div class="card">
-                        <div class="front"><img width="100%" height="100%" src="img/team/niharika.jpg"></div>
+                        <div class="front"><img width="100%" height="100%" src="static/images/team/niharika.jpg"></div>
                         <div class="back">
                             <div class="details">
                                 <h2>Dr. Niharika Walke<br><span>Web master</span></h2>
@@ -389,7 +390,7 @@
                 </div>
                 <div class="column">
                     <div class="card">
-                        <div class="front"><img width="100%" height="100%" src="img/team/soumya.png"></div>
+                        <div class="front"><img width="100%" height="100%" src="static/images/team/soumya.png"></div>
                         <div class="back">
                             <div class="details">
                                 <h2>Dr. Soumya Shetty<br><span>Web master</span></h2>
@@ -415,16 +416,22 @@
     </section>
 
     
-   <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/footer.php'); ?>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/loading.php'); ?>
+   <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/footer.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/loading.php'); ?>
     
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/notificationbox.js"></script>
-    <script src="js/gallery.js"></script>
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/navbar.js"></script>
+    <script src="static/js/notificationbox.js"></script>
+    <!-- <script src="static/js/gallery.js"></script> -->
     <script type="text/javascript">
-<?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/jscode.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/jscode.php'); ?>
+
+if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+           .register('/SmileBrite/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+    } 
 
     //Tabs
     function openPage(pageName, elmnt) {

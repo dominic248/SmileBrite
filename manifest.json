@@ -1,0 +1,19 @@
+{
+	"short_name": "smile-brite",
+	"name": "Smile Brite",
+	"description": "Dentist website",
+	"icons": [
+		{
+			"src":"/SmileBrite/static/images/logo/logo192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src":"/SmileBrite/static/images/logo/logo236x236.png",
+			"type": "image/png",
+			"sizes": "236x236"
+		}
+	],
+	"start_url":"/SmileBrite/",
+	"display": "standalone"
+}

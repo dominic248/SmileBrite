@@ -3,14 +3,14 @@
 <head>
     <title>No-prep Veneers | Smile Brite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/head.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/head.php'); ?>
     <style type="text/css">
     body {
-        background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3)), url("../../img/bg.jpg");
+        background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3)), url("../../static/images/bg.jpg");
     }
 
     .bgimg-1 {
-        background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3)), url("../../img/bg3.jpg");
+        background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3)), url("../../static/images/bg3.jpg");
         height: 300px;
         line-height: 300px;
     }
@@ -86,7 +86,7 @@
 </head>
 
 <body>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/headernav.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/headernav.php'); ?>
     <div class="bgimg bgimg-1">
         <h1 class="heading" style="padding-top:50px;color: black;vertical-align: center;text-align: center;"><span class="" style="">No-prep Veneers</span></h1>
         <!-- background-image:linear-gradient(172deg, #00dbde 0%, #fc00ff 100%); -->
@@ -103,7 +103,7 @@
                     <section>
                         <h2>No Drilling!</h2>
                         <div class="circle circle2">
-                            <img src="../../img/blog/no-prep-veneers.jpg">
+                            <img src="../../static/images/blog/no-prep-veneers.jpg">
                         </div>
                         <div>
                             
@@ -138,15 +138,15 @@
         <aside class="rightaside">
         </aside>
     </div>
-<?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/footer.php'); ?>
-    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/loading.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/footer.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/loading.php'); ?>
    
-    <script src="../../js/jquery-3.4.1.min.js"></script>
-    <script src="../../js/script.js"></script>
-    <script src="../../js/navbar.js"></script>
-    <script src="../../js/notificationbox.js"></script>
+    <script src="../../static/js/jquery-3.4.1.min.js"></script>
+    <script src="../../static/js/script.js"></script>
+    <script src="../../static/js/navbar.js"></script>
+    <script src="../../static/js/notificationbox.js"></script>
     <script type="text/javascript">
-        <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/php/jscode.php'); ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/jscode.php'); ?>
     </script>
 </body>
 
