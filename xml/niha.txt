@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doctor>
+  <cd>
+    <field>Address</field>
+    <value>G-3 Sai GARDEN, Ambadi Road, Vasai(West)</value>
+  </cd>
+  <cd>
+    <field>Phone No.</field>
+    <value>+91 77095 92982</value>
+  </cd>
+  <cd>
+    <field>E-mail</field>
+    <value>walke.niharika@gmail.com</value>
+  </cd>
+  <cd>
+    <field>Date of Birth</field>
+    <value>6th April, 1999</value>
+  </cd>
+  <cd>
+    <field>Nationality</field>
+    <value>Indian</value>
+  </cd>
+</doctor>

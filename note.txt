@@ -1,0 +1,14 @@
+CREATE TABLE appointment (
+    appointmentID int NOT NULL AUTO_INCREMENT,
+ 	PRIMARY KEY (appointmentID),
+	fname varchar(15) not null,
+    lname varchar(15) not null,
+    email varchar(30) not null,
+    phoneno varchar(10) not null,
+    appointmentRegard varchar(60) not null,
+    contactMethod varchar(60) not null,
+    fromDate DATE not null,
+    fromTime TIME not null,
+    toTime TIME not null,
+    message varchar(250)
+);
