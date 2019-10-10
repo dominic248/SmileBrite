@@ -14,6 +14,9 @@
         color: white;
     }
 
+    .tablink{
+        font-size: 1.5rem;
+    }
     .typewritter h1 {
         font-size: 30px;
     }
@@ -125,7 +128,17 @@
 
     }
 
+    .price{
+        font-size: 20px;
+        color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transform: translate(-100%, 100%);
 
+    }
+    
 
     section#gallery {
         margin: 0;
@@ -188,25 +201,25 @@
                 <a href="">
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/Veneers.jpg" alt="">
-                        <div class="bottom-text">VENEERS</div>
+                        <div class="bottom-text">VENEERS<br><br><span class="price">₹123</span></div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/No-Prep-Veneers.jpg" alt="">
-                        <div class="bottom-text">NO-PREP<br>VENEERS</div>
+                        <div class="bottom-text">NO-PREP<br>VENEERS<br><br><span class="price">₹123</span></div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/Invisalign.jpg" alt="">
-                        <div class="bottom-text">INVISALIGN</div>
+                        <div class="bottom-text">INVISALIGN<br><br><span class="price">₹123</span></div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/Whitening.jpg" alt="">
-                        <div class="bottom-text">TEETH<br>WHITENING</div>
+                        <div class="bottom-text">TEETH<br>WHITENING<br><br><span class="price">₹123</span></div>
                     </div>
                 </a>
             </div>
@@ -217,25 +230,26 @@
                 <a href="">
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/Crowns.jpg" alt="">
-                        <div class="bottom-text">CROWNS</div>
+                        <div class="bottom-text">CROWNS<br><br><span class="price">₹123</span></div>
+                        
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/Inlay-Onlay.jpg" alt="">
-                        <div class="bottom-text">INLAYS & ONLAYS</div>
+                        <div class="bottom-text">INLAYS & ONLAYS<br><br><span class="price">₹123</span></div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/Fillings.jpg" alt="">
-                        <div class="bottom-text">FILLINGS</div>
+                        <div class="bottom-text">FILLINGS<br><br><span class="price">₹123</span></div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/Bridges.jpg" alt="">
-                        <div class="bottom-text">BRIDGES</div>
+                        <div class="bottom-text">BRIDGES<br><br><span class="price">₹123</span></div>
                     </div>
                 </a>
             </div>
@@ -247,25 +261,25 @@
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/Implants.jpg" alt="">
                         <div class="bottom-text">
-                            DENTAL IMPLANTS</div>
+                            DENTAL IMPLANTS<br><br><span class="price">₹123</span></div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/Extraction.jpg" alt="">
-                        <div class="bottom-text">EXTRACTIONS</div>
+                        <div class="bottom-text">EXTRACTIONS<br><br><span class="price">₹123</span></div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/Sedation.jpg" alt="">
-                        <div class="bottom-text">SEDATION</div>
+                        <div class="bottom-text">SEDATION<br><br><span class="price">₹123</span></div>
                     </div>
                 </a>
                 <a href="">
                     <div class="gallery-item">
                         <img class="gallery-image" src="static/images/gallery/PRFtreatment.jpg" alt="">
-                        <div class="bottom-text">PRF TREATMENT</div>
+                        <div class="bottom-text">PRF TREATMENT<br><br><span class="price">₹123</span></div>
                     </div>
                 </a>
             </div>
@@ -445,7 +459,7 @@ if('serviceWorker' in navigator) {
             tablinks[i].style.backgroundColor = "";
         }
         document.getElementById(pageName).style.display = "block";
-        elmnt.style.backgroundColor = "grey";
+        elmnt.style.backgroundColor = "#4facfe";
     }
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();

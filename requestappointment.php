@@ -60,7 +60,7 @@
 // Always start this first
 include("db.php");
 if ( isset( $_POST['appointmentbtn'] ) ) {
-    echo "Hello";
+    // echo "Hello";
     if ( isset( $_POST['fname'] ) && isset( $_POST['lname'] ) && isset( $_POST['email'] ) && isset( $_POST['phoneno'] ) && isset( $_POST['appointmentRegard'] ) 
     && isset( $_POST['contactMethod'] )  && isset( $_POST['fromDate'] ) && isset( $_POST['fromTime'] ) && isset( $_POST['toTime'] ) ) {
         // Getting submitted user data from database   
@@ -78,14 +78,15 @@ if ( isset( $_POST['appointmentbtn'] ) ) {
         echo($toTime);
 //INSERT INTO shippers(fname,lname,username,email,passwd,age,gender) VALUES ('Alliance  Shippers','1-800-222-0451');
         $sql = "INSERT INTO appointment (fname,lname,email,phoneno,appointmentRegard,contactMethod,fromDate,fromTime,toTime,message) VALUES 
-        ('".$fname."','".$lname."','".$email."','".$phoneno."','".$appointmentRegard."','".$contactMethod."','".$fromDate."','".$fromTime."','".$toTime."','".$message."');";         
+        ('".$fname."','".$lname."','".$email."','".$phoneno."','".$appointmentRegard."','".$contactMethod."','".$fromDate."','".$fromTime."','".$toTime."','".$message."');";    
+        if ($con->query($sql) === TRUE) {
+            // echo "New record created successfully";
+        } else {
+            // echo "Error: " . $sql . "<br>" . $con->error;
+        }     
     }
 }
-if ($con->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $con->error;
-}
+
 $con->close();
 ?>
     <?php include($_SERVER['DOCUMENT_ROOT'].'/SmileBrite/include/headernav.php'); ?>

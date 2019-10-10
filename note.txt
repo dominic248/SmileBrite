@@ -12,3 +12,5 @@ CREATE TABLE appointment (
     toTime TIME not null,
     message varchar(250)
 );
+
+127.0.0.1/phpmyadmin
