@@ -4,7 +4,7 @@ const cacheName = 'dentist-v0.1'; //-${version}
 
 // Default files to always cache
 var cacheFiles = [
-  '/SmileBrite/home.php',
+  '/SmileBrite/index.php',
   '/SmileBrite/requestappointment.php',
   '/SmileBrite/blog.php',
   '/SmileBrite/about.php',

@@ -48,6 +48,12 @@
                         <label class="label">E-mail</label>
                     </div>
                     <div class="group">
+                        <input class="input-text" type="text" id="phone-input" value="" onblur="validatePhone(this)" name="phone" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="label">Phone Number</label>
+                    </div>
+                    <div class="group">
                         <input class="input-text" type="text" id="message-input" name="message" value="" onblur="validateM(this)" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
@@ -62,7 +68,7 @@
                 </form>
             </div>
             <div style="text-align: center;width:100%;display: block;margin: auto;color: white;margin: 0;padding: 0">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.1905265376963!2d72.88334132017877!3d19.274079037576897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b063a2b8be55%3A0x917e9cae66b63455!2sSt.%20Jerome%20Convent%20High%20School!5e0!3m2!1sen!2sin!4v1567012507322!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.1905265376963!2d72.88334132017877!3d19.274079037576897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b063a2b8be55%3A0x917e9cae66b63455!2sSt.%20Jerome%20Convent%20High%20School!5e0!3m2!1sen!2sin!4v1567012507322!5m2!1sen!2sin" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </article>
         <!-- <div id="map" style="height: 500px;width: 100%"></div> -->
@@ -100,6 +106,30 @@
                 // console.log("nameErr", "");
                 $("#email-input").addClass("valid");
                 $("#email-input").removeClass("invalid");
+                return true;
+            }
+        }
+    }
+
+    function validatePhone(phone) {
+        var phone = phone.value;
+        console.log(phone)
+        if (phone == "") {
+            // console.log("nameErr", "Please enter your username");
+            $("#phone-input").removeClass("valid");
+            $("#phone-input").removeClass("invalid");
+             return false;
+        } else {
+            var regex = /^[0-9]{10}$/;
+            if (regex.test(phone) === false) {
+                // console.log("nameErr", "Please enter a valid username");
+                $("#phone-input").removeClass("valid");
+                $("#phone-input").addClass("invalid");
+                 return false;
+            } else {
+                // console.log("nameErr", "");
+                $("#phone-input").addClass("valid");
+                $("#phone-input").removeClass("invalid");
                 return true;
             }
         }

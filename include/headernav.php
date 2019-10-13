@@ -5,12 +5,12 @@
                     <i class="fa fa-bars"></i>
                     <i class="fa fa-close"></i>
                 </div>
-                <a href="/SmileBrite/home.php" class="logo">
+                <a href="/SmileBrite/index.php" class="logo">
                     <img src="/SmileBrite/static/images/logo/main-logo.png" width="140px" height="25px" style="display:block;float:left;margin-top: 0px;">
                 </a>
                 <ul class="nav-list">
                     <li>
-                        <a href="/SmileBrite/home.php" >Home</a>
+                        <a href="/SmileBrite/index.php" >Home</a>
                     </li>
                     <li>
                         <a href="#">Blogs

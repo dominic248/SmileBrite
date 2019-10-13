@@ -1,5 +1,5 @@
 CREATE TABLE appointment (
-    appointmentID int NOT NULL AUTO_INCREMENT,
+    appointmentID int NOT NULL PRIMARY key AUTO_INCREMENT,
  	PRIMARY KEY (appointmentID),
 	fname varchar(15) not null,
     lname varchar(15) not null,
@@ -13,4 +13,12 @@ CREATE TABLE appointment (
     message varchar(250)
 );
 
+create table contactus(
+    contactid int PRIMARY key not null AUTO_INCREMENT,
+	email varchar(50) not null,
+    phone varchar(11) not null,
+    message varchar(500) not null
+)
+
 127.0.0.1/phpmyadmin
+http://localhost/phpmyadmin
